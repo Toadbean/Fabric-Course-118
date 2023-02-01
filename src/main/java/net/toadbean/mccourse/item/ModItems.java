@@ -6,6 +6,7 @@ import net.minecraft.item.ItemGroup;
 import net.toadbean.mccourse.MCCourseMod;
 import net.minecraft.util.registry.Registry;
 import net.minecraft.util.Identifier;
+import net.toadbean.mccourse.item.custom.DowsingRodItem;
 
 public class ModItems {
 
@@ -15,6 +16,8 @@ public class ModItems {
             new Item(new FabricItemSettings().group(ModItemGroups.COURSE)));
     public static final Item RAW_ORICHALCUM = registerItem("raw_orichalcum",
             new Item(new FabricItemSettings().group(ModItemGroups.COURSE)));
+    public static final Item DOWSING_ROD = registerItem("dowsing_rod",
+            new DowsingRodItem(new FabricItemSettings().group(ModItemGroups.COURSE).maxDamage(32)));
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registry.ITEM, new Identifier(MCCourseMod.MOD_ID, name), item);
