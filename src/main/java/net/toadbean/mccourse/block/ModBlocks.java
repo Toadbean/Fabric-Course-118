@@ -10,6 +10,7 @@ import net.minecraft.item.ItemGroup;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 import net.toadbean.mccourse.MCCourseMod;
+import net.toadbean.mccourse.block.custom.SpeedyBlock;
 import net.toadbean.mccourse.item.ModItemGroups;
 
 public class ModBlocks {
@@ -22,6 +23,8 @@ public class ModBlocks {
             new Block(FabricBlockSettings.of(Material.STONE).strength(4f).requiresTool()), ModItemGroups.COURSE);
     public static final Block DEEPSLATE_ORICHALCUM_ORE = registerBlock("deepslate_orichalcum_ore",
             new Block(FabricBlockSettings.of(Material.STONE).strength(4f).requiresTool()), ModItemGroups.COURSE);
+    public static final Block SPEEDY_BLOCK = registerBlock("speedy_block",
+            new SpeedyBlock(FabricBlockSettings.of(Material.STONE).strength(4f).requiresTool()), ModItemGroups.COURSE);
 
     private static Block registerBlock(String name, Block block, ItemGroup group) {
         registerBlockItem(name, block, group);
