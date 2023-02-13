@@ -20,6 +20,9 @@
   "entrypoints": {
     "main": [
       "net.toadbean.mccourse.MCCourseMod"
+    ],
+    "client": [
+      "net.toadbean.mccourse.MCCourseClient"
     ]
   },
   "mixins": [

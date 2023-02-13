@@ -9,10 +9,7 @@ import net.minecraft.item.ItemGroup;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 import net.toadbean.mccourse.MCCourseMod;
-import net.toadbean.mccourse.block.custom.ModButton;
-import net.toadbean.mccourse.block.custom.ModPressurePlate;
-import net.toadbean.mccourse.block.custom.ModStairsBlock;
-import net.toadbean.mccourse.block.custom.SpeedyBlock;
+import net.toadbean.mccourse.block.custom.*;
 import net.toadbean.mccourse.item.ModItemGroups;
 
 public class ModBlocks {
@@ -46,6 +43,11 @@ public class ModBlocks {
             new FenceGateBlock(FabricBlockSettings.of(Material.METAL).strength(4f).requiresTool()), ModItemGroups.COURSE);
     public static final Block ORICHALCUM_WALL = registerBlock("orichalcum_wall",
             new WallBlock(FabricBlockSettings.of(Material.METAL).strength(4f).requiresTool()), ModItemGroups.COURSE);
+
+    public static final Block CHERRY_BLOSSOM_DOOR = registerBlock("cherry_blossom_door",
+            new ModDoor(FabricBlockSettings.of(Material.WOOD).strength(4f).requiresTool().nonOpaque()), ModItemGroups.COURSE);
+    public static final Block CHERRY_BLOSSOM_TRAPDOOR = registerBlock("cherry_blossom_trapdoor",
+            new ModTrapdoor(FabricBlockSettings.of(Material.WOOD).strength(4f).requiresTool().nonOpaque()), ModItemGroups.COURSE);
 
 
 
